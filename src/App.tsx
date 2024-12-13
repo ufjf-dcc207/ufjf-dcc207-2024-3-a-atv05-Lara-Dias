@@ -1,11 +1,13 @@
+import { ReactNode } from 'react';
 import './App.css';
-import dados from '../funcionarios.json';
+import Funcionario from './Funcionario';
 
+
+ 
 function App() {
-
   return (
     <>
-      
+    <Funcionario/>
     </>
   )
 }

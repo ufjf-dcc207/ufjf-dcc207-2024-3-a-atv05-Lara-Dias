@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import dados from '../funcionarios.json';
 
 function App() {
 

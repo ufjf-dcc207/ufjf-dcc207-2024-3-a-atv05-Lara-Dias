@@ -15,9 +15,9 @@ function Dependentes({
     return(
         <>
         <div className="dependente"> 
-                <div>Nome Dependente: {nome}</div>
-                <div>Data de Nascimento: {data}</div>
-                <div>Abono Salarial: R${abono}</div>
+                <p>Nome Dependente: {nome}</p>
+                <p>Data de Nascimento: {new Date(data).toLocaleDateString()}</p>
+                <p>Abono Salarial: R${abono.toFixed(2)}</p>
                 
             </div>
         </>

@@ -29,8 +29,15 @@ function Funcionario( {
                 <p>Salário Base: R$ {salario.toFixed(2)}</p>
                 <p>Salário Final (com abonos): R$ {salarioFinal.toFixed(2)}</p>
             </div>
-
-            <Dependentes/>
+            <h3>Dependentes</h3>
+            {dependentes.map((dep, index) =>(
+                <Dependentes
+                key={index}
+                nome={dep.nome}
+                data={dep.data_nascimento}
+                abono={dep.abono_salarial}
+                />
+            ))}
         </>
     );
     

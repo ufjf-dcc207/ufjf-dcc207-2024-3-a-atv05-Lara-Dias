@@ -1,4 +1,5 @@
 import Dependentes, {DependenteProps} from './Dependentes';
+import './Funcionario.css'
 
 interface FuncionarioProps{
     nome:string;
@@ -23,8 +24,8 @@ function Funcionario( {
         <>
             <div className="funcionario"> 
                 <h2>{nome}</h2>
-                <p>{setor}</p>
-                <p>{new Date(data).toLocaleDateString()}</p>
+                <p>Setor: {setor}</p>
+                <p>Data de Admissão: {new Date(data).toLocaleDateString()}</p>
                 <p>Salário Base: R$ {salario.toFixed(2)}</p>
                 <p>Salário Final (com abonos): R$ {salarioFinal.toFixed(2)}</p>
             <h3>Dependentes</h3>

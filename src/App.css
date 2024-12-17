@@ -1,0 +1,13 @@
+h1{
+    text-align: center;
+}
+
+.quadroFuncionarios{
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 20px;
+    box-sizing: border-box;
+}

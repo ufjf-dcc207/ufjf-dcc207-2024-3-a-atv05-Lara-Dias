@@ -8,16 +8,18 @@ function App() {
   return (
     <>
       <h1>Quadro de Funcionários</h1>
-      {dados.funcionarios.map((funcionario, index)=> (
-      <Funcionario
-        key={index}
-        nome={funcionario.nome_completo}
-        setor={funcionario.setor}
-        salario={funcionario.salario_base}
-        data={funcionario.data_admissao}
-        dependentes={funcionario.dependentes}
-      />
-    ))}
+      <div className='quadroFuncionarios'>
+        {dados.funcionarios.map((funcionario, index)=> (
+        <Funcionario
+          key={index}
+          nome={funcionario.nome_completo}
+          setor={funcionario.setor}
+          salario={funcionario.salario_base}
+          data={funcionario.data_admissao}
+          dependentes={funcionario.dependentes}
+        />
+      ))}
+    </div>
     </>
   )
 }

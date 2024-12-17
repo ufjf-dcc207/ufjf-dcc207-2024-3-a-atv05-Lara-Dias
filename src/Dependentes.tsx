@@ -1,23 +1,16 @@
-import dados from '../funcionarios.json';
-
-interface DependenteProps{
+export interface DependenteProps{
     nome:string;
-    data: string;
-    abono:number;
+    data_nascimento: string;
+    abono_salarial:number;
 }
 
-function Dependentes({
-    nome = dados.funcionarios[0].dependentes[0].nome,
-    data = dados.funcionarios[0].dependentes[0].data_nascimento,
-    abono = dados.funcionarios[0].dependentes[0].abono_salarial
-
-}: DependenteProps){
+function Dependentes({nome, data_nascimento, abono_salarial}:DependenteProps){
     return(
         <>
         <div className="dependente"> 
                 <p>Nome Dependente: {nome}</p>
-                <p>Data de Nascimento: {new Date(data).toLocaleDateString()}</p>
-                <p>Abono Salarial: R${abono.toFixed(2)}</p>
+                <p>Data de Nascimento: {new Date(data_nascimento).toLocaleDateString()}</p>
+                <p>Abono Salarial: R${abono_salarial.toFixed(2)}</p>
                 
             </div>
         </>
